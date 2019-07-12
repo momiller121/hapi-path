@@ -1,0 +1,38 @@
+{
+  "name": "hapi-path",
+  "version": "0.0.1",
+  "description": "Quick start your hapi project",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx lab -cL"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/momiller121/hapi-path.git"
+  },
+  "keywords": [
+    "hapi",
+    "starter"
+  ],
+  "author": "Mark Miller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/momiller121/hapi-path/issues"
+  },
+  "homepage": "https://github.com/momiller121/hapi-path#readme",
+  "dependencies": {
+    "@hapi/hapi": "^18.3.1",
+    "@hapi/inert": "^5.2.1",
+    "@hapi/joi": "^15.1.0",
+    "@hapi/vision": "^5.5.2",
+    "hapi-pino": "^6.0.1",
+    "hapi-swagger": "^10.0.2",
+    "pino": "^5.12.6"
+  },
+  "devDependencies": {
+    "@hapi/code": "^5.3.1",
+    "@hapi/eslint-config-hapi": "^12.1.0",
+    "@hapi/lab": "^19.1.0",
+    "cucumber": "^5.1.0"
+  }
+}

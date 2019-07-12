@@ -1,0 +1,15 @@
+{
+    "extends": "@hapi/eslint-config-hapi",
+    "parserOptions": {
+        "ecmaVersion": 8
+    },
+    "rules": {
+        "consistent-this": [
+            2,
+            "self",
+            "world"
+        ],
+        "comma-dangle": ["error", "only-multiline"],
+        "padding-line-between-statements": "off"
+    }
+}
