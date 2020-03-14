@@ -4,7 +4,9 @@
   "description": "Quick start your hapi project",
   "main": "index.js",
   "scripts": {
-    "test": "npx lab --leaks -cL"
+    "test": "npx lab --leaks -cL",
+    "coverage": "nyc --reporter=lcov --reporter=html --lines=100 --check-coverage=true npm run allTests",
+    "allTests": "npm test"
   },
   "engines": {
     "node": ">=12"
@@ -37,6 +39,7 @@
     "@hapi/code": "^8.0.1",
     "@hapi/eslint-config-hapi": "^13.0.2",
     "@hapi/lab": "^22.0.4",
-    "cucumber": "^6.0.5"
+    "cucumber": "^6.0.5",
+    "nyc": "^15.0.0"
   }
 }
