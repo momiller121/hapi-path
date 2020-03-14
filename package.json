@@ -1,12 +1,14 @@
 {
   "name": "hapi-path",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Quick start your hapi project",
   "main": "index.js",
   "scripts": {
     "test": "npx lab --leaks -cL"
   },
-  "engines" : { "node" : ">=12" }, 
+  "engines": {
+    "node": ">=12"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/momiller121/hapi-path.git"
