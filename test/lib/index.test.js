@@ -30,6 +30,15 @@ describe('AwesomeProduct', () => {
         expect(testInstance.server.info.host).to.equal(customHostValue);
     });
 
+    it('can be started directly with override configuration values', async () => {
+
+        const customHostValue = '127.0.0.1';
+        const testInstance  = new AwesomeProduct();
+        await testInstance.start({ host: customHostValue });
+        expect(testInstance.server.info.host).to.equal(customHostValue);
+        await testInstance.server.stop({ timeout: 0 });
+    });
+
     it('protects itself from multiple initializations', async () => {
 
         const testInstance  = new AwesomeProduct();
@@ -42,7 +51,7 @@ describe('AwesomeProduct', () => {
         const testInstance  = new AwesomeProduct();
         await testInstance.start();
         await testInstance.start();
-        testInstance.server.stop({ timeout: 0 });
+        await testInstance.server.stop({ timeout: 0 });
     });
 
     it('rejects initialization on invalid configuration', async () => {
@@ -58,7 +67,7 @@ describe('AwesomeProduct', () => {
         await testInstance.start();
         expect(testInstance.server).to.exist();
         expect(testInstance.server.info.started <= Date.now()).to.be.true(); // started a moment ago
-        testInstance.server.stop({ timeout: 0 });
+        await testInstance.server.stop({ timeout: 0 });
     });
 
     it('can be started after being initialized with override configuration values', async () => {
