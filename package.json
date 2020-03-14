@@ -6,6 +6,7 @@
   "scripts": {
     "test": "npx lab --leaks -cL"
   },
+  "engines" : { "node" : ">=12" }, 
   "repository": {
     "type": "git",
     "url": "git+https://github.com/momiller121/hapi-path.git"
