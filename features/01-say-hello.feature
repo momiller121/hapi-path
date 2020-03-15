@@ -7,6 +7,7 @@ Feature: Politely greet guests even if we don't know their name.
     Background: The API is in a normal operating state
         Given the API is ready and operational
 
+    @complete
     Scenario: Default greeting (for anonymous guests)
 
         Sometimes people want to be anonymous. When this happens,
@@ -15,6 +16,7 @@ Feature: Politely greet guests even if we don't know their name.
         When I request the main resource without providing my name
         Then I receive an anonymous greeting
 
+    @complete
     Scenario Outline: Custom greeting for a guest who has provided their name
 
         Generally, people like to be addressed by name. So, when

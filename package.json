@@ -4,9 +4,12 @@
   "description": "Quick start your hapi project",
   "main": "index.js",
   "scripts": {
-    "test": "npx lab --leaks -cL",
-    "coverage": "nyc --reporter=lcov --reporter=html --lines=100 --check-coverage=true npm run allTests",
-    "allTests": "npm test"
+    "test:unit": "lab --leaks -cL",
+    "test:acceptance": "cucumber-js --tags=@complete",
+    "cover": "npm run cover:unit && npm run cover:acceptance && npm run cover:report",
+    "cover:unit": "nyc --silent npm run test:unit",
+    "cover:acceptance": "nyc --silent --no-clean npm run test:acceptance",
+    "cover:report": "nyc report --reporter=lcov --reporter=text --reporter=html --lines=100 --check-coverage=true"
   },
   "engines": {
     "node": ">=12"
