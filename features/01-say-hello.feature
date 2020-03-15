@@ -1,5 +1,7 @@
 Feature: Politely greet guests even if we don't know their name.
 
+    see: https://cucumber.io/docs/bdd/better-gherkin/
+
     As an end user of the cool system
     I want to be greeted with consideration
     So that I feel like the API really cares about me
