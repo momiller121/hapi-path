@@ -33,6 +33,7 @@ module.exports = {
             // This is only an illustration. Perhaps these secrets come from a k8s secret volume mount...
             const rawFile = await readFileAsync('/keyvault/creds.json');
             /* $lab:coverage:off$ */
+            /* istanbul ignore next */
             creds = JSON.parse(rawFile.toString());
             /* $lab:coverage:on$ */
         }
