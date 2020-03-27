@@ -6,10 +6,10 @@
   "scripts": {
     "test:unit": "lab --leaks -cL",
     "test:acceptance": "cucumber-js --tags=@complete",
-    "cover": "npm run cover:unit && npm run cover:acceptance",
+    "allTests": "npm run test:unit && npm run test:acceptance",
     "cover:unit": "nyc --silent npm run test:unit",
-    "cover:acceptance": "nyc --silent --no-clean npm run test:acceptance",
-    "cover:report": "nyc --reporter=lcov --lines=100 --check-coverage=true --reporter=html npm run cover"
+    "cover:acceptance": "nyc --silent npm run test:acceptance",
+    "cover:report": "nyc --reporter=lcov --lines=100 --check-coverage=true --reporter=html npm run allTests"
   },
   "engines": {
     "node": ">=12"
