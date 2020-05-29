@@ -4,7 +4,7 @@ const Pino = require('pino');
 const Package = require('./package');
 const AwesomeProduct = require('./lib');
 
-const bootstrapLogger = Pino({ level: 'info' }).child({ package: Package.name, startupTs: Date.now() });
+const bootstrapLogger = Pino({ level: 'info' }).child({ package: Package.name });
 
 const instance = new AwesomeProduct();
 
