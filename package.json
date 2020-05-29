@@ -4,12 +4,16 @@
   "description": "Quick start your hapi project",
   "main": "index.js",
   "scripts": {
-    "test:unit": "lab --leaks -cL",
+    "start": "node index.js",
+    "test:unit": "lab --leaks -L",
     "test:acceptance": "cucumber-js --tags=@complete",
     "test:all": "npm run test:unit && npm run test:acceptance",
     "_cover:unit": "nyc --check-coverage=true --lines=0 --reporter=text --reporter=html npm run test:unit",
     "_cover:acceptance": "nyc --check-coverage=true --lines=0 --reporter=text --reporter=html npm run test:acceptance",
-    "cover:all": "nyc --reporter=lcov --check-coverage=true --reporter=html npm run test:all"
+    "cover:unit": "nyc --silent npm run test:unit",
+    "cover:acceptance": "nyc --silent --no-clean npm run test:acceptance",
+    "cover:report": "nyc report --reporter=cobertura --reporter=lcov --reporter=text --reporter=html",
+    "cover": "npm run cover:unit && npm run cover:acceptance && npm run cover:report"
   },
   "engines": {
     "node": ">=12"
@@ -34,9 +38,9 @@
     "@hapi/inert": "^6.0.1",
     "@hapi/joi": "^17.1.1",
     "@hapi/vision": "^6.0.0",
-    "hapi-pino": "^8.0.0",
-    "hapi-swagger": "^13.0.0",
-    "pino": "^6.2.0"
+    "hapi-pino": "^8.0.1",
+    "hapi-swagger": "^13.0.2",
+    "pino": "^6.3.0"
   },
   "devDependencies": {
     "@hapi/code": "^8.0.1",
