@@ -29,7 +29,7 @@ It aims to demonstrate:
   Try it yourself comparing the coverage outputs from:
   - unit tests: `npm run _cover:unit` (the unit testing deliberately ignores the route handler that delivers the business feature) (Note to self: Never try to wrap `nyc` around `lab -c`. Lab's execution of code coverage introduces some process level complexity that degrades the consistentcy and reliability of the nyc coverage assessment. )
   - acceptance tests: `npm run _cover:acceptance` (the acceptance test only concerns itself with the business functionality)
-  - combined coverage reporting: `npm run cover` (browse `./coverage/index.html` for an easily reviewable report) (Note that the 'business feature' is implemented on line 5 of [lib/handlers/hello.js](). Only the cucumber acceptance testing exercises this code.)
+  - combined coverage reporting: `npm run cover` (browse `./coverage/index.html` for an easily reviewable report) (Note that the 'business feature' is implemented on line 5 of [lib/handlers/hello.js](lib/handlers/hello.js). Only the cucumber acceptance testing exercises this code.)
 
 - OpenAPI Documentation via [hapi-swagger](https://github.com/glennjones/hapi-swagger) ( browse at http://localhost:3000/documentation#/ )
 - Logging via [pino](https://github.com/pinojs/pino) and [hapi-pino](https://github.com/pinojs/hapi-pino)
