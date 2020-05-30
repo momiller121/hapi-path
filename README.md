@@ -69,4 +69,4 @@ open http://localhost:3000/documentation
 
 ### Bonus Feature!
 
-VSCode users see [.vscode/launch.json]() for launch scripts to debug either `lab` or `cucumber` tests.
+VSCode users see [./.vscode/launch.json]() for launch scripts to debug either `lab` or `cucumber` tests.
