@@ -1,13 +1,11 @@
 {
-  "nyc": {
-    "all": true,
-    "include": [
-      "lib/**/*.js",
-      "config.js"
-    ],
-    "exclude": [
-      "features/**/*",
-      "test/**/*"
-    ]
-  }
+  "all": true,
+  "include": [
+    "lib/**/*.js",
+    "config.js"
+  ],
+  "exclude": [
+    "features/**/*",
+    "test/**/*"
+  ]
 }
