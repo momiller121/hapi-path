@@ -6,7 +6,7 @@ This project is current as of May 2020
 
 `hapi-path` is a demonstration of a fairly complete [Hapi.js](https://hapi.dev) rest api project structure.
 
-This is not an attempt at an exhaustively complex project, but one that, as a software project, exhibits 
+This is not an attempt at an exhaustively complex project, but one that, as a software project, exhibits
 important things that one might care to have in place.
 
 It aims to demonstrate:
@@ -34,7 +34,10 @@ It aims to demonstrate:
 - OpenAPI Documentation via [hapi-swagger](https://github.com/glennjones/hapi-swagger) ( browse at http://localhost:3000/documentation#/ )
 - Logging via [pino](https://github.com/pinojs/pino) and [hapi-pino](https://github.com/pinojs/hapi-pino)
 
-Additionally, the project demonstrates a [Dockerfile](./Dockerfile) suitable for production use.
+Additionally, the project demonstrates a [Dockerfile](./docker/Dockerfile) suitable for production use.
+```sh
+docker build -f docker/Dockerfile .
+```
 
 ### Quickstart
 
