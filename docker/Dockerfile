@@ -44,7 +44,7 @@ WORKDIR ${SERVICE_HOME}
 RUN apk --no-cache update && \
     apk --no-cache upgrade && \
     apk add --no-cache dumb-init && \
-    ${SERVICE_HOME}/harden.sh
+    ${SERVICE_HOME}/docker/harden.sh
 
 USER ${SERVICE_USER}
 

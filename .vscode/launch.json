@@ -23,7 +23,7 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}/node_modules/cucumber/bin/cucumber-js",
-            "args": ["--tags", "@complete", "${workspaceFolder}/features/**/*.feature"],
+            "args": ["--tags", "@debug", "${workspaceFolder}/features/**/*.feature"],
             "outputCapture": "std"
         }
     ]
