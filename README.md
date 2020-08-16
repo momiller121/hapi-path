@@ -1,6 +1,6 @@
 # hapi-path
 
-This project is current as of May 2020
+This project is current as of August 2020
 
 ---
 
