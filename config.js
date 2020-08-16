@@ -2,7 +2,7 @@
 
 const { promisify } = require('util');
 const Fs = require('fs');
-const Joi = require('@hapi/joi');
+const Joi = require('joi');
 const readFileAsync = promisify(Fs.readFile);
 
 const internals = {
