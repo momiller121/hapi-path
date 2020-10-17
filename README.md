@@ -2,6 +2,8 @@
 
 This project is current as of October 2020
 
+[![Run on Repl.it](https://repl.it/badge/github/momiller121/hapi-path)](https://repl.it/github/momiller121/hapi-path)
+
 ---
 
 `hapi-path` is a demonstration of a fairly complete [Hapi.js](https://hapi.dev) rest api project structure.
