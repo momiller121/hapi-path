@@ -22,7 +22,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/node_modules/cucumber/bin/cucumber-js",
+            "program": "${workspaceFolder}/node_modules/@cucumber/cucumber/bin/cucumber-js",
             "args": ["--tags", "@debug", "${workspaceFolder}/features/**/*.feature"],
             "outputCapture": "std"
         }
