@@ -16,7 +16,7 @@
     "cover": "npm run cover:unit && npm run cover:acceptance && npm run cover:report"
   },
   "engines": {
-    "node": ">=12"
+    "node": ">=14"
   },
   "repository": {
     "type": "git",
