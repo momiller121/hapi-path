@@ -47,7 +47,7 @@ Assumption:
 
 ```json
 "engines": {
-  "node": ">=12"
+  "node": ">=14"
 }
 ```
 
