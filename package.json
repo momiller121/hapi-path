@@ -1,6 +1,6 @@
 {
   "name": "hapi-path",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "description": "Quick start your hapi project",
   "main": "index.js",
   "scripts": {
