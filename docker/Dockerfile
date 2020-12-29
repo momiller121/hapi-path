@@ -9,7 +9,7 @@
 #  Install phase [ as installer ]
 #
 # Build image with NPM, etc.
-FROM mhart/alpine-node:14.15.1 AS installer
+FROM mhart/alpine-node:14.15.3 AS installer
 
 ENV SERVICE_HOME /app
 
@@ -28,7 +28,7 @@ RUN apk --no-cache update && \
 #  Release phase [ as release ]
 #  Release image - no NPM, yarn, etc. & harden.sh applied
 #
-FROM mhart/alpine-node:slim-14.15.1 AS release
+FROM mhart/alpine-node:slim-14.15.3 AS release
 
 LABEL maintainer="admin@example.com"
 
