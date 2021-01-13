@@ -1,6 +1,6 @@
 # hapi-path
 
-This project is current as of November 2020
+This project is current as of January 2021
 
 [![Run on Repl.it](https://repl.it/badge/github/momiller121/hapi-path)](https://repl.it/github/momiller121/hapi-path)
 
@@ -12,6 +12,7 @@ This is not an attempt at an exhaustively complex project, but one that, as a so
 important things that one might care to have in place.
 
 It aims to demonstrate:
+
 - Unit testing with [lab](https://hapi.dev/tutorials/testing/?lang=en_US)
   - `npm run test:unit`
 - Acceptance testing with [cucumberjs](https://github.com/cucumber/cucumber-js)
@@ -37,11 +38,12 @@ It aims to demonstrate:
 - Logging via [pino](https://github.com/pinojs/pino) and [hapi-pino](https://github.com/pinojs/hapi-pino)
 
 Additionally, the project demonstrates a [Dockerfile](./docker/Dockerfile) suitable for production use.
+
 ```sh
 docker build -f docker/Dockerfile .
 ```
 
-### Quickstart
+## Quickstart
 
 Assumption:
 
@@ -72,6 +74,6 @@ open http://localhost:3000/documentation
 
 ```
 
-### Bonus Feature!
+### VSCode Debug Launch Configuration
 
 VSCode users see [.vscode/launch.json](.vscode/launch.json) for launch scripts to debug either `lab` or `cucumber` tests.
