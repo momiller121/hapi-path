@@ -33,22 +33,22 @@
   },
   "homepage": "https://github.com/momiller121/hapi-path#readme",
   "dependencies": {
-    "@hapi/hapi": "^20.1.3",
+    "@hapi/hapi": "^20.1.5",
     "@hapi/hoek": "^9.2.0",
-    "@hapi/inert": "^6.0.3",
+    "@hapi/inert": "^6.0.4",
     "@hapi/vision": "^6.1.0",
     "hapi-pino": "^8.3.0",
-    "hapi-swagger": "^14.1.3",
-    "joi": "^17.4.0",
-    "pino": "^6.11.3"
+    "hapi-swagger": "^14.2.4",
+    "joi": "^17.4.2",
+    "pino": "^6.13.2"
   },
   "devDependencies": {
-    "@cucumber/cucumber": "^7.2.1",
+    "@cucumber/cucumber": "^7.3.1",
     "@hapi/code": "^8.0.3",
     "@hapi/eslint-config-hapi": "^13.0.2",
     "@hapi/eslint-plugin-hapi": "^4.3.6",
-    "@hapi/lab": "^24.2.1",
-    "eslint": "^7.27.0",
+    "@hapi/lab": "^24.3.2",
+    "eslint": "^7.32.0",
     "nyc": "^15.1.0"
   }
 }
