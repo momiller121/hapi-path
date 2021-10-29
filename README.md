@@ -6,10 +6,21 @@ This project is current as of October 2021
 
 ---
 
-`hapi-path` is a demonstration of a decent enterprise / production grade [Hapi.js](https://hapi.dev) rest api project structure.
+`hapi-path` is a demonstration of a decent enterprise / production grade [Hapi.js](https://hapi.dev) REST API server.
 
-This is not an attempt show a complex project, but one that, as a software project, exhibits
-important things that one might care to have in place.
+This is a REST API that produces either anonymous or personalized greetings. It is barely more
+than hello-world.
+
+This is not an attempt to show a complex project, but one that, as a server software project, exhibits important things that one might care to have in place. Also, this had to have some kind of project structure, but it's not meant to be a strong opinion on that front. There are many decent ways to structure a project.
+
+The main point of this is to demonstrate how elegantly the *business value behavior* (in this
+case, the ability to respond with a greeting) of a system may be defined and asserted using Gherkin
+syntax feature files AND the *associated but very separate* value of unit testing. 
+
+Philosophically, this example values 100% test coverage. But this doesn't mean that pedantic, useless
+tests were written to close on that value. It just means that where no coverage existed, the
+code was either removed, tested, or ignored from test processing. The point of 100% test coverage
+is that everything was *thoughtfully considered*.
 
 It aims to demonstrate:
 
