@@ -20,7 +20,7 @@ syntax feature files AND the *associated but very separate* value of unit testin
 Philosophically, this example values 100% test coverage. But this doesn't mean that pedantic, useless
 tests were written to close on that value. It just means that where no coverage existed, the
 code was either removed, tested, or ignored from test processing. The point of 100% test coverage
-is that everything was *thoughtfully considered*.
+is that everything was *thoughtfully considered*. (In truth, no code was removed to meet coverage. It was simply never written because the unit and acceptance tests were written first.)
 
 It aims to demonstrate:
 
