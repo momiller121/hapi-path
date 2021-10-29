@@ -1,0 +1,11 @@
+node_modules/
+features/
+test/
+coverage/
+README.md
+.nycrc
+.replit
+.git/
+.nyc_output/
+.vscode
+.eslintrc
