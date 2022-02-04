@@ -1,6 +1,6 @@
 # hapi-path
 
-This project is current as of October 2021
+This project is current as of February 2022
 
 [![Run on Repl.it](https://repl.it/badge/github/momiller121/hapi-path)](https://repl.it/github/momiller121/hapi-path)
 
@@ -15,7 +15,7 @@ This is not an attempt to show a complex project, but one that, as a server soft
 
 The main point of this is to demonstrate how elegantly the *business value behavior* (in this
 case, the ability to respond with a greeting) of a system may be defined and asserted using Gherkin
-syntax feature files AND the *associated but very separate* value of unit testing. 
+syntax feature files AND the *associated but very separate* value of unit testing.
 
 Philosophically, this example values 100% test coverage. But this doesn't mean that pedantic, useless
 tests were written to close on that value. It just means that where no coverage existed, the
