@@ -1,6 +1,6 @@
 # hapi-path
 
-This project is current as of February 2022
+This project is current as of August 2022
 
 [![Run on Repl.it](https://repl.it/badge/github/momiller121/hapi-path)](https://repl.it/github/momiller121/hapi-path)
 
