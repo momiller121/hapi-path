@@ -41,7 +41,7 @@
     "hapi-swagger": "^14.5.5",
     "joi": "^17.6.0",
     "pino": "^8.4.0",
-    "pino-pretty": "^8.1.0"
+    "pino-pretty": "^9.0.0"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^8.5.1",
